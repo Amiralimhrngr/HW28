@@ -18,33 +18,28 @@
 <h1>Latest Order</h1>
 
 <p>
-    Customer:
-    ${order.customerName}
+    Customer: ${order.customerName}
 </p>
 
 <p>
-    Product:
-    ${order.productName}
+    Product: ${order.productName}
 </p>
 
 <p>
-    Product Price:
-    ${order.productPrice}
+    Product Price: ${order.productPrice}
 </p>
 
 <p>
-    Quantity:
-    ${order.quantity}
+    Quantity: ${order.quantity}
 </p>
 
 <p>
-    Total Price:
-    ${order.totalPrice}
+    Total Price: ${order.totalPrice}
 </p>
 
 <hr>
 
-<a href="${pageContext.request.contextPath}/order">
+<a href="order">
     Create Another Order
 </a>
 
