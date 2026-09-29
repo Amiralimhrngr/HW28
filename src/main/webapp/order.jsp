@@ -17,56 +17,39 @@
 
 <h1>Create New Order</h1>
 
-<form method="post"
-      action="order">
+<form method="post" action="order">
 
     <label>Customer Name:</label>
 
-    <input type="text"
-           name="customerName"
-           value="${customerName}"
-           required>
+    <input type="text" name="customerName" value="${customerName}" required>
 
     <br><br>
 
     <label>Product Name:</label>
 
-    <input type="text"
-           name="productName"
-           required>
+    <input type="text" name="productName" required>
 
     <br><br>
 
     <label>Product Price:</label>
 
-    <input type="number"
-           name="productPrice"
-           step="0.01"
-           min="0"
-           required>
+    <input type="number" name="productPrice" step="0.01" min="0" required>
 
     <br><br>
 
     <label>Quantity:</label>
 
-    <input type="number"
-           name="quantity"
-           min="1"
-           required>
+    <input type="number" name="quantity" min="1" required>
 
     <br><br>
 
-    <button type="submit">
-        Submit Order
-    </button>
+    <button type="submit"> Submit Order</button>
 
 </form>
 
 <br>
 
-<a href="latest-order">
-    View Latest Order
-</a>
+<a href="latest-order"> View Latest Order </a>
 
 </body>
 </html>

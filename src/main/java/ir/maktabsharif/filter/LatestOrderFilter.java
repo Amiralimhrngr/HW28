@@ -26,14 +26,14 @@ public class LatestOrderFilter implements Filter {
         HttpSession session = httpRequest.getSession(false);
 
         if (session == null) {
-            httpResponse.sendRedirect(httpRequest.getContextPath() + "/order");
+            httpResponse.sendRedirect("order");
             return;
         }
 
         Order order = (Order) session.getAttribute("latestOrder");
 
         if (order == null) {
-            httpResponse.sendRedirect(httpRequest.getContextPath() + "/order");
+            httpResponse.sendRedirect("order");
             return;
         }
         chain.doFilter(request, response);
